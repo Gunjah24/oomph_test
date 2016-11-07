@@ -4,8 +4,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    name="org.eclipse.products"
-    label="Eclipse.org">
+    name="de.doubleslash.eclipse.products"
+    label="Doubleslash.de">
   <setupTask
       xsi:type="setup:InstallationTask"
       id="installation"/>
@@ -24,7 +24,7 @@
       value="=true"
       vm="true"/>
   <product name="epp.package.standard"
-      label="Eclipse Standard/SDK">
+      label="Eclipse for SMACC">
     <version
         name="latest"
         label="Latest (Mars)">
