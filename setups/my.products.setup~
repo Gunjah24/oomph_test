@@ -25,11 +25,30 @@
       vm="true"/>
   <product name="epp.package.standard"
       label="Eclipse for SMACC">
+
+<annotation
+      source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+    <detail
+        key="folderName">
+      <value>eclipse</value>
+    </detail>
+    <detail
+        key="folderName.macosx">
+      <value>Eclipse</value>
+    </detail>
+  </annotation>
+ 
+<setupTask
+      xsi:type="setup:InstallationTask"
+      id="installation"/>
+
     <version
-        name="latest"
-        label="Latest (Mars)">
+        name="neon"
+        label="Neon"
+	requiredJavaVersion="1.8">
       <setupTask
-          xsi:type="setup.p2:P2Task">
+          xsi:type="setup:CompoundTask" 
+	name="User Preferences">>
         <requirement
             name="epp.package.standard"
             versionRange="[4.5.0,5.0.0)"/>
