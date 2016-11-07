@@ -77,6 +77,11 @@
           name="org.eclipse.m2e.feature.feature.jar"/>
       <requirement
           name="org.eclipse.m2e.feature.feature.group"/>
+
+	  <requirement
+          name="net.sourceforge.plantuml.feature.feature.group"/>
+      <repository
+          url="http://plantuml.sourceforge.net/updatesitejuno"/>
  
          <repository
           url="http://download.eclipse.org/releases/neon"/>
