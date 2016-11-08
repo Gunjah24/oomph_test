@@ -207,6 +207,20 @@
       remoteURI="https://github.com/nittka/terminology.wiki.git">
     <description>Terminology Wiki Git</description>
 </setupTask>
+
+<setupTask
+      xsi:type="projects:ProjectsImportTask"
+      id="Terminology-Projects">
+    <sourceLocator
+        rootFolder="${git.clone.terminology.location}"
+        locateNestedProjects="true"/>
+    <sourceLocator
+        rootFolder="${git.clone.terminologywiki.location}">
+      <predicate
+          xsi:type="predicates:NamePredicate"
+          pattern=".*"/>
+    </sourceLocator>
+</setupTask>
   
     <stream
         name="master"
